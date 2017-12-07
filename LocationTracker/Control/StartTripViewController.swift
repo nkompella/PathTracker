@@ -81,7 +81,7 @@ class StartTripViewController: UIViewController, MFMessageComposeViewControllerD
       self.saveRun()
       self.performSegue(withIdentifier: .details, sender: nil)
     })
-    alertController.addAction(UIAlertAction(title: "Discasrd", style: .destructive) { _ in
+    alertController.addAction(UIAlertAction(title: "Discard", style: .destructive) { _ in
       self.stopRun()
       _ = self.navigationController?.popToRootViewController(animated: true)
     })
